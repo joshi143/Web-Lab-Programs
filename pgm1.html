@@ -1,0 +1,66 @@
+<html>
+<title style="font: size 40;">CALCULATOR</title>
+<style>
+    input {
+        background-color: rgb(18, 80, 161);
+        width: 100%;
+        border-radius: 10px;
+        color: rgb(255, 255, 255);
+        font-size: 100px;
+        font-weight: 800;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    h1 {
+        display: block;
+        font-size: 6em;
+    }
+    
+    body {
+        background-image: url('calculator.jpg');
+        background-size: 100% 100%;
+    }
+</style>
+<div align="center"></div>
+<h1>CALCULATOR</h1>
+
+<body>
+    <form name="calculate">
+        <table>
+            <tr>
+                <td colspan="4"> <input type="text" name="get"></td>
+            </tr>
+
+            <tr>
+                <td> <input type="button" value="1" onclick="calculate.get.value +='1'"></td>
+                <td> <input type="button" value="2" onclick="calculate.get.value +='2'"></td>
+                <td> <input type="button" value="3" onclick="calculate.get.value +='3'"></td>
+                <td> <input type="button" value="+" onclick="calculate.get.value +='+'"></td>
+            </tr>
+
+            <tr>
+                <td> <input type="button" value="4" onclick="calculate.get.value +='4'"></td>
+                <td> <input type="button" value="5" onclick="calculate.get.value +='5'"></td>
+                <td> <input type="button" value="6" onclick="calculate.get.value +='6'"></td>
+                <td> <input type="button" value="-" onclick="calculate.get.value +='-'"></td>
+            </tr>
+
+            <tr>
+                <td> <input type="button" value="7" onclick="calculate.get.value +='7'"></td>
+                <td> <input type="button" value="8" onclick="calculate.get.value +='8'"></td>
+                <td> <input type="button" value="9" onclick="calculate.get.value +='9'"></td>
+                <td> <input type="button" value="*" onclick="calculate.get.value +='*'"></td>
+            </tr>
+
+            <tr>
+                <td> <input type="reset" value="c"></td>
+                <td> <input type="button" value="0" onclick="calculate.get.value +='0'"></td>
+                <td> <input type="button" value="=" onclick="calculate.get.value =eval(calculate.get.value)"></td>
+                <td> <input type="button" value="/" onclick="calculate.get.value +='/'"></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
+
+</html>

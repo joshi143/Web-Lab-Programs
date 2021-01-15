@@ -1,0 +1,40 @@
+<h1>CALCULATOR</h1>
+
+<body>
+    <form name="calculate">
+        <table>
+            <tr>
+                <td colspan="4"> <input type="text" name="get"></td>
+            </tr>
+
+            <tr>
+                <td> <input type="button" value="1" onclick="calculate.get.value +='1'"></td>
+                <td> <input type="button" value="2" onclick="calculate.get.value +='2'"></td>
+                <td> <input type="button" value="3" onclick="calculate.get.value +='3'"></td>
+                <td> <input type="button" value="+" onclick="calculate.get.value +='+'"></td>
+            </tr>
+
+            <tr>
+                <td> <input type="button" value="4" onclick="calculate.get.value +='4'"></td>
+                <td> <input type="button" value="5" onclick="calculate.get.value +='5'"></td>
+                <td> <input type="button" value="6" onclick="calculate.get.value +='6'"></td>
+                <td> <input type="button" value="-" onclick="calculate.get.value +='-'"></td>
+            </tr>
+
+            <tr>
+                <td> <input type="button" value="7" onclick="calculate.get.value +='7'"></td>
+                <td> <input type="button" value="8" onclick="calculate.get.value +='8'"></td>
+                <td> <input type="button" value="9" onclick="calculate.get.value +='9'"></td>
+                <td> <input type="button" value="*" onclick="calculate.get.value +='*'"></td>
+            </tr>
+
+            <tr>
+                <td> <input type="reset" value="c"></td>
+                <td> <input type="button" value="0" onclick="calculate.get.value +='0'"></td>
+                <td> <input type="button" value="=" onclick="calculate.get.value =eval(calculate.get.value)"></td>
+                <td> <input type="button" value="/" onclick="calculate.get.value +='/'"></td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
